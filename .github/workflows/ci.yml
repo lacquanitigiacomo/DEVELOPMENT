@@ -1,0 +1,40 @@
+name: RYB CI
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [20.x, 22.x]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node ${{ matrix.node-version }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: npm ci
+      - run: make install
+      - run: cd backend && npm run lint
+      - run: cd backend && npm test
+      - run: cd frontend && npm run lint
+      - run: cd frontend && npm run test
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: 'npm' }
+      - run: make install
+      - run: make docker-up
+      - run: sleep 10
+      - run: cd tests/e2e && npx playwright install --with-deps
+      - run: cd tests/e2e && npx playwright test
+      - run: make docker-down
