@@ -1,0 +1,77 @@
+{
+  "folders": [
+    {
+      "name": "🎯 HUB",
+      "path": "."
+    },
+    {
+      "name": "🎨 Frontend Future",
+      "path": "projects/ryb-frontend-future"
+    },
+    {
+      "name": "📱 Mobile PWA",
+      "path": "projects/ryb-mobile-pwa"
+    },
+    {
+      "name": "⚙️ Backend API",
+      "path": "projects/ryb-backend-api"
+    },
+    {
+      "name": "🧠 AI Core",
+      "path": "projects/ryb-ai-core"
+    },
+    {
+      "name": "🐳 Infrastructure",
+      "path": "infrastructure"
+    },
+    {
+      "name": "📚 Docs",
+      "path": "docs"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "eslint.workingDirectories": [
+      "projects/ryb-frontend-future",
+      "projects/ryb-mobile-pwa",
+      "projects/ryb-backend-api"
+    ],
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/.git": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint",
+      "bradlc.vscode-tailwindcss",
+      "ms-vscode.vscode-typescript-next",
+      "ms-playwright.playwright",
+      "ms-azuretools.vscode-docker"
+    ]
+  },
+  "launch": {
+    "configurations": [
+      {
+        "name": "Debug Frontend",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:5173",
+        "webRoot": "${workspaceFolder:🎨 Frontend Future}/src"
+      },
+      {
+        "name": "Debug Backend",
+        "type": "node",
+        "request": "launch",
+        "runtimeExecutable": "npx",
+        "runtimeArgs": ["tsx", "watch", "src/server.ts"],
+        "cwd": "${workspaceFolder:⚙️ Backend API}",
+        "console": "integratedTerminal"
+      }
+    ]
+  }
+}

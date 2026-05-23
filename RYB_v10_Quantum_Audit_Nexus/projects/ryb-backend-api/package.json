@@ -1,0 +1,56 @@
+{
+  "name": "ryb-backend-api",
+  "version": "10.0.0",
+  "description": "RYB Quantum Audit Nexus Backend",
+  "main": "dist/server.js",
+  "engines": {
+    "node": ">=18.0.0 <23.0.0",
+    "npm": ">=9.0.0"
+  },
+  "engineStrict": true,
+  "scripts": {
+    "preinstall": "node -e "const v=process.version.slice(1).split('.');const major=parseInt(v[0]);if(major>=23){console.error('\\u274C ERRORE: Node.js '+process.version+' non è supportato. Usa Node v22 LTS o inferiori.');process.exit(1);}console.log('\\u2705 Node.js '+process.version+' — compatibile.');"",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "lint": "eslint src --ext .ts",
+    "test": "jest --passWithNoTests"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1",
+    "bullmq": "^5.7.0",
+    "ioredis": "^5.4.1",
+    "pg": "^8.11.5",
+    "drizzle-orm": "^0.30.10",
+    "zod": "^3.23.8",
+    "uuid": "^9.0.1",
+    "date-fns": "^3.6.0",
+    "tesseract.js": "^5.1.0",
+    "sharp": "^0.33.4",
+    "pdf-parse": "^1.1.1",
+    "minio": "^8.0.0",
+    "ws": "^8.17.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/morgan": "^1.9.9",
+    "@types/multer": "^1.4.11",
+    "@types/uuid": "^9.0.8",
+    "@types/ws": "^8.5.10",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.12.12",
+    "@types/pdf-parse": "^1.1.4",
+    "typescript": "^5.4.5",
+    "tsx": "^4.11.0",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.12"
+  }
+}
