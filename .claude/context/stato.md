@@ -26,6 +26,15 @@ le sessioni web, credendo che condividano la memoria. Non la condividono.
   dell'ambiente remoto: non apribile. Contenuto mai acquisito.
 - Rapporto RYB v20 ↔ X-PAY CHECK non chiarito.
 
+**Emerso a fine sessione.**
+- L'utente usa **Skills Manager** (app macOS): 182 skill in libreria, 71 abilitate per
+  Claude Code. Nelle sessioni cloud ne arrivano 21, perche Skills Manager scrive su
+  `~/.claude/skills` del Mac mentre le sessioni cloud leggono il bucket sincronizzato
+  dall'account Anthropic. Due canali distinti: il container non vede il disco locale.
+  Per armare le sessioni web le skill vanno committate in `.claude/skills/` nel repo
+  oppure caricate sull'account.
+- **Carmy** deve diventare un agente AI proattivo (vedi glossario).
+
 **Prossimo passo.**
 Farsi raccontare SmartSL a voce dall'utente e scriverlo nel glossario. Da lì,
 capire se è un progetto nuovo, un modulo di RYB o un servizio esterno.

@@ -18,6 +18,21 @@ dominio è bloccato dalla network policy dell'ambiente.
 **Da chiarire:** cos'è, a cosa serve, dove vive (repo esistente? progetto nuovo?
 servizio di terzi da integrare?), a che punto è.
 
+## Carmy — da skill ad agente proattivo
+
+Attualmente esiste come **skill** (`carmy`): cucina di alta qualità ispirata alla mentalità
+di Carmy di The Bear — tecnica ossessiva, creatività istintiva, rispetto totale per la
+materia prima. Copre cucina italiana regionale, fine dining, pasta fresca, lievitati,
+fermentazione, cotture avanzate, e la conoscenza degli strumenti (planetaria, roner,
+friggitrice ad aria, forno a vapore, pacojet).
+
+**Obiettivo dichiarato dall'utente (2026-09-07): trasformarla in un agente AI proattivo.**
+Non più una skill che risponde quando interrogata, ma un agente che anticipa — presumibilmente
+su dispensa, stagionalità, pianificazione dei pasti, gestione degli avanzi.
+
+Da definire: cosa significa "proattivo" nel concreto (cosa osserva, con che frequenza,
+come e quando interviene), dove gira, con che dati. **Progetto da impostare, non ancora avviato.**
+
 ## RYB — v20 "Quantum Audit Nexus / Zero Stress"
 
 Piattaforma di analisi incrociata del rapporto di lavoro: buste paga, pattern orari e
