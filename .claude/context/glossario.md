@@ -33,7 +33,12 @@ su dispensa, stagionalità, pianificazione dei pasti, gestione degli avanzi.
 Da definire: cosa significa "proattivo" nel concreto (cosa osserva, con che frequenza,
 come e quando interviene), dove gira, con che dati. **Progetto da impostare, non ancora avviato.**
 
-## RYB — v20 "Quantum Audit Nexus / Zero Stress"
+## RYB — v20 "Quantum Audit Nexus / Zero Stress"  ⚠️ SUPERATO
+
+**Decisione 2026-09-07: X-PAY CHECK ha sostituito RYB.** Stesso prodotto, stadio successivo.
+RYB resta solo come storico: non riceve piu' sviluppo e non avra' un repo proprio.
+Quanto segue descrive il prodotto, che vale ancora per X-PAY CHECK.
+
 
 Piattaforma di analisi incrociata del rapporto di lavoro: buste paga, pattern orari e
 turnazioni, calendario e festività, estrazione dati da PDF orari, confronto con
@@ -51,10 +56,10 @@ Prometheus + Grafana per il monitoring.
 
 ## X-PAY CHECK
 
-Progetto parallelo a RYB, struttura di cartelle quasi identica (stesso `ryb-start.sh`,
+**Il progetto attivo della linea.** Ha sostituito RYB (decisione 2026-09-07): stesso
+prodotto, stadio successivo. Struttura di cartelle quasi identica a RYB (stesso `ryb-start.sh`,
 stesso Makefile, presenza di un `backend-legacy`). Ha una sua spec frontend dedicata
-(`X-PAY-CHECK_frontend_spec.md`). **Rapporto con RYB da chiarire**: evoluzione, fork,
-rebrand o esperimento accantonato.
+(`X-PAY-CHECK_frontend_spec.md`). Destinato a diventare un repo autonomo.
 
 ## OSTERIE
 

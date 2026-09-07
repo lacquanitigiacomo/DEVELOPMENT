@@ -35,6 +35,19 @@ le sessioni web, credendo che condividano la memoria. Non la condividono.
   oppure caricate sull'account.
 - **Carmy** deve diventare un agente AI proattivo (vedi glossario).
 
+**Deciso a fine sessione.** X-PAY CHECK sostituisce RYB; un repo per progetto con
+storia nuova; backup skill in repo dedicato. Dettagli e motivazioni in `decisioni.md`.
+
+**Ripulito.** `.gitignore` in root (non esisteva) e `node_modules`/`.DS_Store` tolti
+dal tracking: da 28.189 file tracciati a 196.
+
+**In carico all'utente, sul Mac (io da qui non posso):**
+1. Sistemare il token GitHub di Skills Manager (il backup fallisce da subito: repo creato
+   il 04/09 alle 23:48:29, push fallito alle 23:48:30, zero commit). Causa probabile:
+   token fine-grained limitato a repo selezionati, che non include quello appena creato,
+   oppure token classico con solo `public_repo` su un repo privato.
+2. Mettere **DEVELOPMENT e OSTERIE privati**: sono pubblici, unici fra i 13 repo.
+
 **Prossimo passo.**
 Farsi raccontare SmartSL a voce dall'utente e scriverlo nel glossario. Da lì,
 capire se è un progetto nuovo, un modulo di RYB o un servizio esterno.

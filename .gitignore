@@ -1,0 +1,49 @@
+# Dipendenze — si reinstallano con npm install, non si committano mai
+node_modules/
+.pnp
+.pnp.js
+
+# Build e output
+dist/
+build/
+out/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Ambiente — .env.example SI committa, .env MAI
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Editor
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.swp
+
+# Log e cache
+*.log
+npm-debug.log*
+yarn-error.log*
+.cache/
+coverage/
+.nyc_output/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Temporanei
+tmp/
+temp/
+*.tmp
