@@ -10,12 +10,16 @@ Giacomo Lacquaniti — visual designer con basi solide di web development, anima
 e presentazione progetti. Si lavora **in italiano**. Preferisce codice semantico,
 leggibile e manutenibile, e soluzioni motivate: prima il perché, poi il come.
 
-## Progetti in questo repo
+> ⚠️ **Questo repo sta cambiando ruolo.** Diventa l'**hub** delle skill e della memoria
+> condivisa; i progetti escono verso repo propri. Struttura target e ordine di
+> esecuzione in `.claude/context/architettura.md`. Sotto c'e' lo stato attuale.
+
+## Progetti in questo repo (in uscita)
 
 | Progetto | Cartella | Cos'è | Stato |
 |---|---|---|---|
-| **RYB v20 Zero Stress** | `RYB_v20_Zero_Stress/` | Piattaforma di analisi incrociata buste paga / orari / timbrature / CCNL. Filosofia "Clone. Launch. Done." | attivo |
-| **X-PAY CHECK** | `X-PAY CHECK/` | Fork/parallelo di RYB. **Da chiarire il rapporto con RYB** (vedi domande aperte) | da chiarire |
+| **RYB v20 Zero Stress** | `RYB_v20_Zero_Stress/` | Piattaforma di analisi incrociata buste paga / orari / timbrature / CCNL | ⚠️ superato da X-PAY CHECK, resta come storico |
+| **X-PAY CHECK** | `X-PAY CHECK/` | **Il progetto attivo della linea**: ha sostituito RYB | da estrarre in repo proprio |
 | **SmartSL** | — | ❓ **NON DOCUMENTATO** — vedi `.claude/context/glossario.md` | ignoto |
 
 Documenti di riferimento in root:
@@ -26,6 +30,7 @@ Documenti di riferimento in root:
 
 ## Contesto esteso
 
+- `.claude/context/architettura.md` — **dove vanno le cose e perche'**: struttura target
 - `.claude/context/stato.md` — a che punto siamo, sessione per sessione
 - `.claude/context/decisioni.md` — decisioni prese e perché
 - `.claude/context/glossario.md` — cosa significano i nomi propri del progetto
@@ -66,7 +71,5 @@ Questo vale anche quando la sessione sembra interlocutoria: soprattutto allora.
 ## Domande aperte
 
 - **Cos'è SmartSL?** Nominato dall'utente, assente dal repo. Da documentare.
-- **RYB vs X-PAY CHECK**: sono lo stesso prodotto in due stadi, due prodotti distinti,
-  o uno è un esperimento abbandonato? Le due cartelle sono quasi identiche.
 - Instagram è bloccato dalla network policy delle sessioni web: link a reel non
   sono apribili da qui. Serve che i contenuti vengano incollati come testo.
